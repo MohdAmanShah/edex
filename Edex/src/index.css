@@ -1,0 +1,475 @@
+:root {
+    --spacing: 8%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar CSS */
+#navBar {
+    color: white;
+    margin: 1em;
+    margin-top: 0;
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto; /* Add this line to check for overflow */
+}
+
+#navBar ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    list-style: none;
+    flex-grow: .3;
+}
+
+#navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navBar a:hover {
+    text-decoration: underline;
+}
+
+#signLogArea {
+    display: flex;
+    gap: 1em;
+}
+
+#logInButton {
+    text-align: justify;
+    align-self: center;
+}
+
+#signUpButton {
+    color: white;
+    align-self: center;
+    border: 1px transparent solid;
+    background-image: linear-gradient(to top, orange, #ffc078);
+    padding: 0.3em .8em;
+    border-radius: 20px;
+}
+
+#navBar ul li:hover {
+    color: orange;
+}
+
+/* Center Search CSS for searching */
+#centerSearchArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.subText {
+    color: orange;
+    font-size: 1.5em;
+}
+
+.mainText {
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+}
+
+.minorText {
+    color: lightgrey;
+    font-size: 0.9em;
+}
+
+.searchBox {
+    margin-top: 1em;
+    position: relative;
+    height: 2.8em;
+}
+
+.searchBox input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding-left: 2em;
+    border-radius: 30px;
+}
+
+.searchBox img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+
+#searchImage {
+    width: 35%;
+    height: 35%;
+    margin-top: -50px;
+    margin-bottom: var(--spacing);
+
+}
+
+/* Home page blue upper area */
+main {
+    height: auto;
+    background: linear-gradient(155deg, #6a7dfb 21%, #6176f7 20%);
+}
+
+/* Show off area */
+.showOff {
+    background-color: #F8F4FF;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.showOff>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
+}
+
+.showOff img {
+    height: 70%;
+}
+
+.showOffText {
+    color: grey;
+    font-size: 1rem;
+}
+
+.showOffTitle {
+    color: black;
+    font-size: 1.4em;
+}
+
+/* footer area */
+footer {
+    color: white;
+    background-color: #21212f;
+    display: flex;
+    padding: 2em;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    margin: 0;
+    list-style: none;
+}
+
+footer img {
+    margin-right: .2em;
+}
+
+.logoNav {
+    font-style: italic;
+    color: orange;
+    font-size: 2em;
+}
+
+.navHeadingLogo {
+    color: white;
+    font-size: 2em;
+}
+
+.navHeading {
+    color: white;
+    font-size: 1.5em;
+}
+
+.navItem {
+    color: lightgrey;
+    margin: 0.7em 0;
+}
+
+.navItem a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+#subscribe {
+    height: 2.5em;
+    width: 80%;
+    color: white;
+    font-size: 0.90em;
+    font-weight: bold;
+    align-self: center;
+    border: 1px transparent solid;
+    background-image: linear-gradient(to top, orange, #ffc078);
+    padding: 0.3em .8em;
+    border-radius: 20px;
+}
+
+#emailInput {
+    border-radius: 5px;
+    padding: 1em;
+}
+
+/* articel css here */
+article>div:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+article>div:nth-child(2n) {
+    background-color: #F8F4FF;
+}
+.joinPanel{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    height: 70vh;
+    padding: 3em;
+}
+.joinPanel img{
+    height: 100%;
+}
+.signUpPanel{
+    color: white;
+    font-size: 1em; 
+    align-self: center;
+    padding: 0.6em 1em;
+    background-image: linear-gradient(to top, orange, #ffc078);
+    border-radius: 20px;
+    text-decoration: none;
+}
+.signUpPanel:hover{
+    text-decoration: underline;
+}
+.eduList{
+    margin: 1em;
+    margin: 0 5% ;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+.eduListItem{
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5rem;
+    justify-content:space-between;
+}
+.eduListItem:hover{
+    outline: 1px orange solid;
+}
+.eduListItem div{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+/* shared css here*/
+
+.headingText{
+    color:black;
+    font-size:1.8em;   
+    font-weight: bold;
+}
+.subHeadingText{
+    font-size:1.2em;   
+    color: grey;
+}
+.paraText{
+    color: grey;
+    font-size:0.9em;   
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+}
+.genricBlock{
+    padding: 2em 0;
+}
+.genricMenu{
+    display: flex;
+    padding: 1.5rem;
+    justify-content: center;
+}
+.studentBlockArea{
+    display: flex;
+    padding: 1em;
+    border-radius: 1em;
+    justify-content: center;
+    box-shadow: 0 0 20px 10px rgba(199, 194, 194, 0.2);
+    gap: 2em;
+    background-color: rgba(199, 194, 194, 0.2);
+   
+}
+
+.studentBlock{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    overflow: scroll; /* Add this line to add scrollbars if content overflows */
+}
+.studentBlock img{
+    width: 30dvh;
+    height: 30dvh;
+    margin-bottom: 1em;
+}
+.studentBlock span{
+    color: grey;
+    font-size: .8em;
+    text-align: center;
+}
+
+.studentBlock span:first-of-type{
+    font-size: 1em;
+    color: black;
+}
+
+.glowEffect {
+    box-shadow: 0 0 10px 5px rgba(216, 12, 12, 0.8);
+}
+/* Review Area */
+.studentReviewArea{
+    margin: 0 12% 0 12%;
+    display: flex;
+    padding: 1em;
+    gap:1rem;
+}
+.studentReview{
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 1rem;
+}
+.reviewName{
+    display: flex;
+    align-items: flex-start;
+    gap:.5em;
+    
+}
+.reviewBlock{
+    display: flex;
+    justify-content: space-between; 
+   
+}
+.reviewText{
+    color:grey;
+    font-size: 0.9rem;
+}
+
+/* Course Banner Area */
+/* course list */
+.courseContainer{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.courseList{
+    display:flex;
+    box-shadow: 0 0 20px 10px rgba(199, 194, 194, 0.2);
+    gap: 1em;
+    background-color: rgba(199, 194, 194, 0.2);
+}
+
+.courseBanner{
+    padding: 1dvw;
+    width: 20dvw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Add this line to hide overflow content */
+}
+.courseBanner:hover .arrowUpRight{
+    color: white;
+    background-color: orange;
+}
+.courseIcon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.courseBanner hr{
+    width:100%;
+    margin: 1rem 0;
+    color:lightgrey;
+}
+.courseIcon img{
+   height: calc( 100% - 1dvw );
+   width: calc( 100% - 1dvh );
+}
+.courseText{
+    height: 1rem;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: "..."; /* Add ellipsis (...) */
+}
+.courseIcon span{
+    position: absolute;
+    top:1em;
+    left: 1em;
+    padding: 4px 0.5em;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.5);
+}
+.coursePrice{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+/* .starReview{
+
+} */
+
+
+
+
+/* Universal */
+.black{
+    color:black;
+}
+.arrow{
+    color: red;
+}
+.overflow{
+    overflow: hidden;
+}
+.fullStar{
+    color: orange;
+}
+.margin20{
+    margin-left: 10%;
+}
+
+
+
+/* svg element */
+
+.arrowUpRight{
+    color: orange;
+    margin: 0 1rem ;
+    border-radius: 50%;;
+    transform: scale(1.8);
+    padding: 2px;
+}
+
+.eduListItem:hover .arrowUpRight{
+    color:white;
+    background-color: orange;
+}
+.arrowUpRight:hover{
+    color:white;
+    background-color: orange;
+}
